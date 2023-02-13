@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*HEADER*/
+
+.header {
+  width: 100vw;
+  height: 30vh;
+  background-image: url(../images/design1_image2.jpg);
+  background-size: cover;
+  background-position: 0 40%;
+  padding: 1rem;
+  position: relative;
+}
+
+.title {
+  width: 100vw;
+  color: black;
+  text-align: center;
+  border: 1px solid black;
+  font-size: large;
+  font-style: italic;
+}
+
+.title-principal {
+  width: 50%;
+  margin: 0.5rem;
+  font-style: italic;
+  font-size: larger;
+}
+.nav {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+}
+.nav a {
+  text-decoration: none;
+  border: 1px solid black;
+  box-shadow: 4px 4px rgba(153, 153, 153, 0.5);
+  background-color: rgb(68, 114, 196);
+  color: white;
+  padding: 0.2rem;
+  margin-right: 1rem;
+}
+.nav a:hover {
+  background-color: rgb(112, 173, 71);
+  cursor: pointer;
+}
+
+/*MAIN*/
+
+.main {
+  width: 100vw;
+  height: 60vh;
+}
+.imagen {
+  width: 150px;
+  height: 150px;
+}
+.section {
+  position: relative;
+}
+.logo-home {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+.LogoMightyducks-home {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+.date-home {
+  display: inline-block;
+  width: 50%;
+  padding: 2rem;
+  position: relative;
+  left: -100px;
+  right: 0px;
+  top: 10px;
+}
+.date-home p {
+  text-indent: 2em;
+}
+.logo-about {
+  width: 20%;
+  text-align: center;
+  padding: 2rem;
+  position: absolute;
+}
+.LogoMightyducks-about {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.date-about {
+  width: 50%;
+  padding: 2rem;
+  position: relative;
+  left: 200px;
+  right: 0px;
+  top: 10px;
+}
+.date-about p {
+  text-indent: 2em;
+}
+
+.logo-contact {
+  width: 20%;
+  text-align: center;
+  padding: 2rem;
+  position: absolute;
+}
+.LogoMightyducks-contact {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.date-contact {
+  width: 50%;
+  padding: 2rem;
+  position: relative;
+  left: 200px;
+  right: 0px;
+  top: 10px;
+}
+
+.mail {
+  color: blue;
+}
+
+/*IMAGENES SUELTAS*/
+
+.hockey-image-container1 {
+  width: 100%;
+  height: 100%;
+}
+#hockey-imagen1 {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.hockey-image-container2 {
+  width: 100%;
+  height: 100%;
+}
+
+#hockey-imagen2 {
+  width: 100%;
+  height: 100%;
+}
+
+.hockey-image-container3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#hockey-imagen3 {
+  width: 100%;
+  position: absolute;
+  top: 105px;
+  left: 0px;
+}
+/*FOOTER*/
+.footer {
+  width: 100vw;
+  height: 5vh;
+}
