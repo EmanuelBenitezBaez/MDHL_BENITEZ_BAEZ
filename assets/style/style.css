@@ -1,180 +1,262 @@
+/***NORMALIZE***/
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu';
 }
+
 body {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
 }
 
-/*HEADER*/
-
-.header {
-  width: 100vw;
-  height: 30vh;
-  background-image: url(../images/design1_image2.jpg);
-  background-size: cover;
-  background-position: 0 40%;
-  padding: 1rem;
-  position: relative;
+/***HEADER***/
+header {
+    min-height: 50vh;
+    width: 100vw;
+    background-image: url(../images/design1_image2.jpg);
+    background-size: cover;
+    background-position: 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
-.title {
-  width: 100vw;
-  color: black;
-  text-align: center;
-  border: 1px solid black;
-  font-size: large;
-  font-style: italic;
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    height: 10vh;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: rgb(68, 114, 196, 0.5);
+    color: white;
+    padding: 0 7.73rem 0 7.7rem;
+}
+
+a[href="#"] {
+    background-color: rgb(112, 173, 71, 0.4);
+}
+
+a:hover {
+    color: #EEE9DA;
+}
+
+/***MAIN***/
+main {
+    background-color: white;
+    min-height: 35vh;
 }
 
 .title-principal {
-  width: 50%;
-  margin: 0.5rem;
-  font-style: italic;
-  font-size: larger;
-}
-.nav {
-  position: absolute;
-  top: -10px;
-  right: 5px;
-}
-.nav a {
-  text-decoration: none;
-  border: 1px solid black;
-  box-shadow: 4px 4px rgba(153, 153, 153, 0.5);
-  background-color: rgb(68, 114, 196);
-  color: white;
-  padding: 0.2rem;
-  margin-right: 1rem;
-}
-.nav a:hover {
-  background-color: rgb(112, 173, 71);
-  cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 35vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-style: normal;
 }
 
-/*MAIN*/
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: #6096B4;
+    color: white;
+    border: 1px solid black;
+}
 
-.main {
-  width: 100vw;
-  height: 60vh;
+.logo {
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
-.imagen {
-  width: 150px;
-  height: 150px;
+
+.articles {
+    background-color: #93BFCF;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 4px 10px black;
 }
-.section {
-  position: relative;
-}
-.logo-home {
-  display: inline-block;
-  width: 20%;
-  text-align: center;
-  margin: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 2rem;
-}
-.LogoMightyducks-home {
-  position: absolute;
-  top: 50px;
-  left: 0px;
-}
-.date-home {
-  display: inline-block;
-  width: 50%;
-  padding: 2rem;
-  position: relative;
-  left: -100px;
-  right: 0px;
-  top: 10px;
-}
-.date-home p {
-  text-indent: 2em;
-}
+
 .logo-about {
-  width: 20%;
-  text-align: center;
-  padding: 2rem;
-  position: absolute;
-}
-.LogoMightyducks-about {
-  position: absolute;
-  top: 20px;
-  left: 0px;
-}
-.date-about {
-  width: 50%;
-  padding: 2rem;
-  position: relative;
-  left: 200px;
-  right: 0px;
-  top: 10px;
-}
-.date-about p {
-  text-indent: 2em;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.logo-contact {
-  width: 20%;
-  text-align: center;
-  padding: 2rem;
-  position: absolute;
-}
-.LogoMightyducks-contact {
-  position: absolute;
-  top: 20px;
-  left: 0px;
-}
-.date-contact {
-  width: 50%;
-  padding: 2rem;
-  position: relative;
-  left: 200px;
-  right: 0px;
-  top: 10px;
+
+
+.articles-about article {
+    background-color: #93BFCF;
+    margin: 5rem;
+    padding: 5rem;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 4px 10px black;
 }
 
-.mail {
-  color: blue;
+.image {
+    width: 130px;
+    height: 130px;
+
 }
 
-/*IMAGENES SUELTAS*/
-
-.hockey-image-container1 {
-  width: 100%;
-  height: 100%;
-}
-#hockey-imagen1 {
-  width: 100%;
-  height: 100%;
- 
+/**SCHEDULE***/
+.section-schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hockey-image-container2 {
-  width: 100%;
-  height: 100%;
+.table-border,
+th,
+td {
+    border: 1px solid black;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2rem;
+
 }
 
-#hockey-imagen2 {
-  width: 100%;
-  height: 100%;
+.table-border th,
+td {
+    background-color: mediumslateblue;
+    color: white
 }
 
-.hockey-image-container3 {
-  width: 100%;
-  height: 100%;
-  position: relative;
+.all-games {
+    padding: .5rem;
+    text-decoration: underline;
 }
-#hockey-imagen3 {
-  width: 100%;
-  position: absolute;
-  top: 105px;
-  left: 0px;
+
+.information {
+    padding: 5rem;
+    background-color: #93BFCF;
+    margin: 5rem;
+    color: white;
+    border-radius: 5px;
+    text-align: justify;
+    box-shadow: 2px 4px 10px black;
 }
-/*FOOTER*/
-.footer {
-  width: 100vw;
-  height: 5vh;
+
+span {
+    font-weight: bold;
+}
+
+/***RULES***/
+.ihf-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5rem;
+}
+
+.rules article {
+    padding: 5rem;
+}
+
+.article-sportsmanship,
+.article-field,
+.article-allplay {
+    background-color: #6096B4;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    text-align: justify;
+    box-shadow: 2px 4px 10px black;
+}
+
+.circle {
+    list-style-type: circle;
+    padding-left: 2rem;
+}
+
+.article-allplay p {
+    text-indent: 2rem;
+}
+
+/**CONTACT**/
+.logo-mail {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem;
+    padding: 4rem;
+}
+
+.mail-container {
+    background-color: #6096B4;
+    padding: 2rem;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 4px 10px black;
+}
+
+
+/**GALLERY***/
+.gallery {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:#85CDFD;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.gallery img {
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 2px 4px 10px black;
+    margin: 1rem;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+/***FOOTER***/
+footer {
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#6096B4;
+    border-radius: 5px;
 }
