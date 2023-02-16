@@ -274,22 +274,13 @@ form {
 .closest_school {
     padding: 1rem;
     width: 60vw;
-    display: flex;
-    justify-content: start;
-    align-items: center;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 2px 4px 10px black;
 }
-.closest_school input {
-    margin: .5rem;
-}
-
-.schools {
-    margin-left: .2rem;
-    padding: .5rem;
-    width: 15vw;
-    border-radius: 2px;
+#closest_school {
+    padding: 1rem;
+    width: 50vw; 
 }
 .position_fieldset {
     padding: 1rem;
