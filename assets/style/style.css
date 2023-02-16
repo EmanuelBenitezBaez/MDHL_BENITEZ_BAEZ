@@ -5,11 +5,9 @@
     margin: 0;
     font-family: 'Ubuntu';
 }
-
 body {
     width: 100vw;
 }
-
 /***HEADER***/
 header {
     min-height: 50vh;
@@ -21,7 +19,6 @@ header {
     justify-content: center;
     align-items: end;
 }
-
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -29,34 +26,28 @@ nav {
     width: 100%;
     height: 10vh;
 }
-
 nav a {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
+    width: 100%;
     background-color: rgb(68, 114, 196, 0.5);
     color: white;
-    padding: 0 7.73rem 0 7.7rem;
+    text-align: center;
 }
-
 a[href="#"] {
     background-color: rgb(112, 173, 71, 0.4);
 }
-
 a:hover {
     color: #EEE9DA;
 }
-
 /***MAIN***/
 main {
     background-color: white;
     min-height: 35vh;
 }
-
 .title-principal {
     position: absolute;
     top: 0;
@@ -69,7 +60,6 @@ main {
     font-size: larger;
     font-style: normal;
 }
-
 .title {
     width: 100%;
     display: flex;
@@ -80,15 +70,12 @@ main {
     color: white;
     border: 1px solid black;
 }
-
 .logo {
     height: 30vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
-
 .articles {
     background-color: #93BFCF;
     padding: 1rem;
@@ -96,16 +83,12 @@ main {
     color: white;
     box-shadow: 2px 4px 10px black;
 }
-
 .logo-about {
     height: 30vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-
-
-
 .articles-about article {
     background-color: #93BFCF;
     margin: 5rem;
@@ -114,21 +97,22 @@ main {
     color: white;
     box-shadow: 2px 4px 10px black;
 }
-
 .image {
     width: 130px;
     height: 130px;
-
 }
-
-/**SCHEDULE***/
+/**GAME INFO***/
 .section-schedule {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+iframe {
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+}
 .table-border,
 th,
 td {
@@ -137,20 +121,16 @@ td {
     text-align: center;
     border-radius: 5px;
     margin: 2rem;
-
 }
-
 .table-border th,
 td {
     background-color: mediumslateblue;
     color: white
 }
-
 .all-games {
     padding: .5rem;
     text-decoration: underline;
 }
-
 .information {
     padding: 5rem;
     background-color: #93BFCF;
@@ -160,11 +140,9 @@ td {
     text-align: justify;
     box-shadow: 2px 4px 10px black;
 }
-
 span {
     font-weight: bold;
 }
-
 /***RULES***/
 .ihf-title {
     display: flex;
@@ -173,7 +151,6 @@ span {
     margin: 1rem;
     padding: 1rem;
 }
-
 .rules {
     display: flex;
     flex-direction: column;
@@ -182,11 +159,9 @@ span {
     border-radius: 5px;
     margin: 5rem;
 }
-
 .rules article {
     padding: 5rem;
 }
-
 .article-sportsmanship,
 .article-field,
 .article-allplay {
@@ -198,16 +173,13 @@ span {
     text-align: justify;
     box-shadow: 2px 4px 10px black;
 }
-
 .circle {
     list-style-type: circle;
     padding-left: 2rem;
 }
-
 .article-allplay p {
     text-indent: 2rem;
 }
-
 /**CONTACT**/
 .logo-mail {
     display: flex;
@@ -216,7 +188,6 @@ span {
     margin: 5rem;
     padding: 4rem;
 }
-
 .mail-container {
     background-color: #6096B4;
     padding: 2rem;
@@ -224,8 +195,6 @@ span {
     color: white;
     box-shadow: 2px 4px 10px black;
 }
-
-
 /**GALLERY***/
 .gallery {
     height: 100%;
@@ -233,11 +202,10 @@ span {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color:#85CDFD;
+    background-color: #85CDFD;
     padding: 1rem;
     border-radius: 10px;
 }
-
 .gallery img {
     width: 300px;
     border-radius: 5px;
@@ -245,18 +213,147 @@ span {
     box-shadow: 2px 4px 10px black;
     margin: 1rem;
 }
-
 .gallery img:hover {
     transform: scale(1.1);
 }
-
-
 /***FOOTER***/
 footer {
     min-height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#6096B4;
+    background-color: #6096B4;
     border-radius: 5px;
+}
+/***REGISTRATION***/
+.registration {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: #6096B4;
+    color: white;
+    border: 1px solid black;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.first_fieldset {
+    padding: 1rem;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px black;
+}
+.grade-preschool {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+.grade-preschool label {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+.name_surname div {
+    padding: .5rem;
+}
+.elementary_school {
+    padding: 1rem;
+}
+.closest_school {
+    padding: 1rem;
+    width: 60vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px black;
+}
+.closest_school input {
+    margin: .5rem;
+}
+
+.schools {
+    margin-left: .2rem;
+    padding: .5rem;
+    width: 15vw;
+    border-radius: 2px;
+}
+.position_fieldset {
+    padding: 1rem;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px black;
+}
+.position_fieldset div {
+    padding: 1rem;
+}
+.position-play {
+    padding: 1rem;
+}
+.uniform_fieldset {
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px black;
+}
+.uniform_fieldset div {
+    padding: 1rem;
+}
+.permission_fieldset {
+    padding: 1rem;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px black;
+}
+.parent_date {
+    padding: .5rem 0 .5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.parent_date div {
+    padding: 1rem;
+}
+.btn {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+}
+.btn input {
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px black;
 }
